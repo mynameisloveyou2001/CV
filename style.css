@@ -20,12 +20,12 @@
 }
 
 .header img{
-width: 200px;
-height: 200px;
+width: 153;
+height: 206px;
 border-radius: 50%;
 position: absolute;
 top: 50px;
-left: 65px;
+left: 85px;
 border: 5px solid white;
 box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
 cursor: pointer;
@@ -123,9 +123,93 @@ filter: grayscale(100%);
     position: relative;
 }
 
-.bar span::before{
+/* .bar span::before{
     position: absolute;
     width: 80%;
+    content: "";
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius:10px;
+} */
+/* php */
+.bar .php::before{
+    position: absolute;
+    width: 70%;
+    content: "";
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius:10px;
+}
+/* laravell */
+.bar .laravell::before{
+    position: absolute;
+    width: 30%;
+    content: "";
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius:10px;
+}
+/* html */
+.bar .html::before{
+    position: absolute;
+    width: 60%;
+    content: "";
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius:10px;
+}
+/* javascript */
+.bar .javascript::before{
+    position: absolute;
+    width: 50%;
+    content: "";
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius:10px;
+}
+/* mysql */
+.bar .sql::before{
+    position: absolute;
+    width: 75%;
+    content: "";
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius:10px;
+}
+/* github */
+.bar .git::before{
+    position: absolute;
+    width: 50%;
+    content: "";
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius:10px;
+}
+/* boostrap */
+.bar .boostrap::before{
+    position: absolute;
+    width: 45%;
     content: "";
     height: 80%;
     background-color: black;
@@ -169,7 +253,7 @@ filter: grayscale(100%);
 
 .right-area p{
     padding-left: 70px;
-    text-align: justify;
+    /* text-align: justify; */
     /* word-break: break-all; */
     font-size: 17px;
     color: gray;
@@ -242,4 +326,34 @@ filter: grayscale(100%);
     font-weight: normal;
     margin: 13px 0;
 }
+
+
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 20px 0 50px 135px;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transform: 0.5;
+}
+
+button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .print-area * {
+        visibility: visible;
+    }
+}
+
 
